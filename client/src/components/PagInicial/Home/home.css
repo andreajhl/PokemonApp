@@ -1,0 +1,26 @@
+.home{
+    display: flex;
+}
+.homecontainer{
+    width: 100%;
+}
+.search{
+    margin: 15px;
+}
+.cuerpo{
+    display:inline-flex;
+   justify-content: space-between;
+}
+.cuerpo1{
+    font-family: cursive;
+    align-items: flex-start;
+    max-width: 200px;
+    min-width: 200px;
+    margin-left: 15px;
+}
+.cuerpo2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800xp;
+    justify-content: center;
+}

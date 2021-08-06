@@ -1,0 +1,32 @@
+.pokemonContainer{
+   max-width: 280px;
+   max-height: 520px;
+   margin: 15px;
+   border-radius: 16px;
+   overflow: hidden;
+   box-shadow: 10px 10px 15px rgba(24, 43, 77, 0.609);
+   border: 1px solid rgba(24, 23, 23, 0.671);
+   justify-content: center;
+   text-align: center;
+};
+.cardheader{
+    position:relative;
+}
+.header{
+     width: 100%;
+     height: 150px;
+}
+.cardimg{
+    border: 1px solid rgba(112, 120, 121, 0.452);
+    border-radius: 100%;
+    background-color: rgba(118, 125, 126, 0.507);
+    width: 180px;
+    height: 180px;
+    margin-top: -110px;
+   justify-content: center;
+   align-items: center
+};
+.cardbody{
+    text-align: center
+};
+ 
