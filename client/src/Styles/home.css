@@ -1,0 +1,71 @@
+.homecontainer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cuerpo {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: inline-flex;
+      -ms-flex-align: inline-flex;
+          align-items: inline-flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cuerpo1 {
+  padding: 1%;
+  padding-top: 4%;
+  width: 20%;
+  min-height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#cc5333), color-stop(46%, #9d3e3a), color-stop(90%, #4d1a47), to(#23074d));
+  background: linear-gradient(0deg, #cc5333 0%, #9d3e3a 46%, #4d1a47 90%, #23074d 100%);
+}
+
+.cuerpo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 4%;
+  width: 80%;
+  height: 100%;
+  padding: 2%;
+}
+/*# sourceMappingURL=home.css.map */

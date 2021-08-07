@@ -2,11 +2,10 @@ import React,{useState,useEffect} from 'react'
 import { useSelector } from 'react-redux'
 
 import Nav from '../../Nav/Nav'
-import Search from '../Search/Search.js'
 import Pag from '../Pag/Pag'
 import BarraOrdenamiento from '../BarraOrdenamiento/BarraOrdenamiento'
 
-import './home.css'
+import '../../../Styles/home.scss'
 
 
 
@@ -14,6 +13,7 @@ import './home.css'
 var cards=12;
 export default function Home(){
    const pokemonL= useSelector(state=>state.pokemonsLoading)
+   console.log(pokemonL)
    
     const [currentPag, setCurrentPag]= useState(0)
     const [items, setItems]=useState(null)
@@ -56,8 +56,8 @@ export default function Home(){
     };
     
     const ordenarPokemonsNum = (orden) =>{
-        if(orden==='asc') setItems([...items].sort((a,b)=>a.nombre.length - b.nombre.length)); 
-        else  setItems([...items].sort((a,b)=>b.nombre.length - a.nombre.length));
+        if(orden==='asc') setItems([...items].sort((a,b)=>a.fuerza - b.fuerza)); 
+        else  setItems([...items].sort((a,b)=>b.fuerza - a.fuerza));
     };
 
    const filtrarPokemonsPropios=()=>{
@@ -67,16 +67,8 @@ export default function Home(){
        setItems([...pokemonL])
    }
     return (
-        <div className='home'>
             <div className='homecontainer'>
-                <div className='header'>
-                    <div className='nav'>
-                        <Nav/>
-                    </div>
-                    <div className='search'>
-                        <Search />
-                    </div> 
-                </div>
+                    <Nav />
                 <div className='cuerpo'>
                     <div className='cuerpo1'>
                         <BarraOrdenamiento allPokemons={allPokemons} filtrarPokemonsPropios={filtrarPokemonsPropios} currentPag={currentPag} prev={prev} next={next} ordenarPokemonsAlf={ordenarPokemonsAlf} ordenarPokemonsNum={ordenarPokemonsNum} /> 
@@ -86,6 +78,5 @@ export default function Home(){
                     </div> 
                 </div>
             </div>
-        </div>
     )
 }

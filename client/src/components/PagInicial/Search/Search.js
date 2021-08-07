@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 
 import { getPokemonName} from '../../../actions/index.js'
-import '../../../stylos/button.css'
+import '../../../Styles/search.scss'
 
 export default function Search(){
     const dispatch=useDispatch()
@@ -19,9 +19,9 @@ export default function Search(){
     }
     
     return (
-        <div style={{alignItems:'center'}}>
-            <button type="submit" className='buttonSeach' onClick={handleSubmit}>Buscar</button>
-            <input type="text" style={{height:'27px',borderTopRightRadius:'8px', borderBottomRightRadius:'8px'}} onChange={handleChange} value={state}/>
+        <div className='search'>
+            <button type="submit" className='search_button' onClick={handleSubmit}>Buscar</button>
+            <input type="text" className='search_input' onChange={handleChange} value={state}/>
         </div>
     )
 }

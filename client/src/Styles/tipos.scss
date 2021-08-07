@@ -1,0 +1,29 @@
+@import 'global';
+
+.container{
+    @include caja-flex(flex,column,center,center,nowrap);
+    width: 100%;
+    font-size: 17px;
+
+}
+.inputTipos{
+    @include caja-flex(flex,row,space-around,center,wrap);
+   padding-left:2%;
+   padding-right:2%;
+   
+}
+.itipos{
+    padding: 1%;
+}
+.cardlist{
+    @include caja-flex (inline-flex,row,space-around,center,nowrap);
+}
+.cardTipos{
+    overflow-x: scroll;
+    width: 90%
+}
+.space{
+    @include caja-flex(flex,row,space-around,center,nowrap);
+}
+
+

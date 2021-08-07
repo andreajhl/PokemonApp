@@ -1,4 +1,3 @@
-
 import {Route} from 'react-router';
 
 import Inicio from './components/PagInicial/Inicio/Inicio.js'

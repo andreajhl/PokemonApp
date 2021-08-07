@@ -2,11 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import img from '../../pokemon.png'
-import './nav.css';
+import '../../Styles/nav.scss';
 
 export default function Nav (){
     return (
-        <nav className="navbar">
+        <div className="navbar">
             <img id="pokemon" src={img} height="60"  alt="" />
             <NavLink  exact to="/pokemons"  className='li'>
                 <label className="link">Home</label>
@@ -20,7 +20,7 @@ export default function Nav (){
             <NavLink to='/pokemons/favs' className='li'>
                 <label className="link">Favoritos</label>
             </NavLink>
-        </nav> 
+        </div> 
     )
 }
                      

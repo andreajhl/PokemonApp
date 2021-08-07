@@ -68,9 +68,3 @@ export function getPokemonstipos (){
             return dispatch({type:'GET_POKEMONS_TIPOS', payload:p})
     }
 };
-export function ordenarPokemon(payload){
-    return {
-        type: 'ORDENAR_POKEMON_ALFAVETICAMENTE',
-        payload
-    }
-}

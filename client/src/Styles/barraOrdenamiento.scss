@@ -1,0 +1,23 @@
+@import 'global';
+
+.camp{
+    @include caja-flex (flex,column,center,center,nowrap);
+    width:100%;
+    color: $color1;
+    font-size: 20px;
+    &_i{
+        @include caja-flex (flex,row,center,center,nowrap);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    &_d{
+        @include caja-flex (flex,column,center,center,nowrap);
+    }
+}
+.block{
+    @include caja-flex (flex,column,center,center,nowrap);
+}
+.filtrar{
+    @include caja-flex(flex,column,center,center,nowrap);
+    color: $color1;
+}

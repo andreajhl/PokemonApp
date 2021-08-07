@@ -1,0 +1,63 @@
+@import 'global';
+
+.pokemonContainerDetail{
+   @include caja-flex(flex,column,center,center,nowrap);
+   width:400px;
+   height: 500px;
+   margin: 15px;
+   border-radius: 16px;
+   overflow: hidden;
+   border: 1px solid rgb(0, 0, 0);
+   background-color: white;
+   cursor: pointer;
+ };
+ .cardheaderDetail{
+   background: radial-gradient(circle, rgba(204,83,51,1) 14%, rgba(171,68,56,1) 49%, rgba(35,7,77,1) 100%);
+   width: 100%;
+   height: 40%;
+   position: relative;
+}
+
+.cardimgDetail{
+   border: 1px solid rgba(112, 120, 121, 0.452);
+   border-radius: 100%;
+   background-color: rgba(118, 125, 126, 0.507);
+   width: 60%;
+   position: absolute;
+   top: 10%;
+   left:22%;
+};
+.detailContiner{
+   @include caja-flex(flex,column,center,center,nowrap);
+   width: 100%;
+   margin: 4%
+}
+.pokemoncuerpo{
+   @include caja-flex(flex,column,center,center,nowrap);
+   margin-top: 12%;
+   width: 100%;
+   height: 60%;
+   p{
+      margin: 8px
+   }
+   h2{
+      margin: 8px
+   }
+   &_inicio{
+      @include caja-flex(flex,column,center,center,nowrap);
+      margin: 0px
+   }
+   &_cuerpo{
+      @include caja-flex(inline-flex,row,space-evenly,center,nowrap);
+      width: 100%;
+      margin:8px;
+      font-size: 20px
+   }
+}
+.tiposmapDetail{
+   @include caja-flex(flex,row,space-evenly,center,nowrap);
+   width:100%;
+}
+
+ 
+ 

@@ -1,0 +1,36 @@
+.navbar {
+  background: linear-gradient(107deg, #23074d 29%, #521c46 56%, #cc5333 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.link {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.li {
+  text-decoration: none;
+  padding: 1%;
+}
+
+.link:hover {
+  color: black;
+  text-shadow: 1px 1px 0px white;
+}
+/*# sourceMappingURL=nav.css.map */

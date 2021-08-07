@@ -1,0 +1,44 @@
+@import 'global';
+
+.form{
+    @include caja-flex(flex,column,center,center,nowrap);
+    width: 100%;
+}
+.divform{
+    @include caja-flex(flex,row,space-around,center,nowrap);
+    width:80%;
+    font-size: 18px;
+    margin: 1%
+}
+.divformName{
+    @include caja-flex(flex,row,space-around,center,nowrap);
+    width:18%;
+    font-size: 18px;
+}
+.bloq{
+    @include caja-flex (flex,row,space-around,center,nowrap);
+    font-size: 20px;
+    width: 35%;
+   
+}
+.bloqs{
+    @include caja-flex (flex,column,space-around,center,nowrap);
+    max-width: 30%;
+    margin: 1%;
+}
+
+
+.list{
+    @include caja-flex (flex,row,center,center,nowrap);
+    margin: 8%
+}
+.scrollDiv{
+    @include caja-flex(inline-flex,column,space-around,center,wrap);
+    overflow-x: scroll;
+    height: 150px;
+    width: 300px;
+    border-radius: 8px;
+}
+.scrollDiv:hover{
+    background-color: rgba(170, 156, 180, 0.233);
+}

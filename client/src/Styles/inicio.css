@@ -1,0 +1,28 @@
+.inicio {
+  background-image: url("https://i2.wp.com/collectible506.com/wp-content/uploads/2018/12/Pokemon-Go.jpg?fit=1400%2C787&ssl=1");
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonInicio {
+  margin-left: 271px;
+  margin-top: 409px;
+  width: 71px;
+  height: 71px;
+  border-radius: 100%;
+  background-color: rgba(75, 32, 95, 0);
+  border: 3px solid black;
+}
+
+.buttonInicio:hover {
+  border: 3px solid red;
+}
+/*# sourceMappingURL=inicio.css.map */

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 import PokemonFav from './PokemonFav';
 import Nav from '../Nav/Nav.js'
-import './fav.css'
+import '../../Styles/fav.scss'
 
 
 export default function Fav (){

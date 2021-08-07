@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 
 import {getPokemonLoading, getPokemonstipos} from '../../../actions/index.js'
-import './inicio.css'
+import '../../../Styles/inicio.scss'
 
 
 export default function Inicio (){

@@ -1,0 +1,68 @@
+@import 'global';
+
+.button{
+    background:none;
+    border-radius: 5px;
+    border: 1px solid rgb(104, 35, 15);
+    color: $color1;
+    font-family: cursive;
+    font-size: 20px;
+    margin: 7px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(255, 238, 2);
+    color:$color5;
+}
+
+.buttonForm{
+    background:none;
+    border-radius: 5px;
+    border: 1px solid rgb(104, 35, 15);
+    color: $color5;
+    font-family: cursive;
+    font-size: 20px;
+    margin: 7px;
+    cursor: pointer;
+}
+.buttonForm:hover{
+    background-color: rgb(255, 238, 2);
+    color:$color5;
+}
+.buttonOrder{
+    background: none;
+    color: rgb(255, 251, 251);
+    border:none;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+.buttonOrder:hover{
+    color:rgb(255, 238, 2);
+}
+.buttonfav{
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: $color1;
+    position: relative;
+    top:10%;
+    right:-80% ;
+    cursor: pointer;
+}
+.buttonfav:hover{
+    color: red;
+}
+.buttonremove{
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: $color1;
+    position: relative;
+    top:10%;
+    right:-80% ;
+    cursor: pointer;
+}
+.buttonremove:hover{
+    color: black;
+}

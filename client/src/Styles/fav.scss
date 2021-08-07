@@ -1,0 +1,6 @@
+@import 'global';
+
+.fav{
+    @include caja-flex(flex,row,space-around,center,wrap);
+    padding: 2%;
+}

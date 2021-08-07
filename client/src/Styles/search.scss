@@ -1,0 +1,29 @@
+@import 'global';
+
+.search{
+    @include caja-flex (flex,row,center,center,nowrap);
+    &_button{
+        border-top-left-radius:8px;
+        border-bottom-left-radius:8px;
+        background:none;
+        color: white;
+        border-left:1px solid #160431;
+        border-top:1px solid #160431;
+        border-bottom:1px solid #160431;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    &_button:hover{
+        background-color: rgb(255, 238, 2);
+        color:$color5;
+    }
+    &_input{
+        height: 20px;
+        border-bottom-right-radius:8px;
+        border-top-right-radius:8px;
+        border-right:1px solid #160431;
+        border-top:1px solid #160431;
+        border-bottom:1px solid #160431;
+    }
+}
+

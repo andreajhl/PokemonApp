@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import {filtrarTipo} from '../../actions/index.js'
 import PokemonCardTipo from './PokemonCardTipo.js'
-import './tipos.css'
+import '../../Styles/tipos.scss'
 
 export default function TiposPokemon() {
 
@@ -13,7 +13,7 @@ export default function TiposPokemon() {
     const dispatch=useDispatch()
 
     return (
-        <div>
+        <div style={{width:'100%'}}>
             <header>
                 <Nav />
             </header>
@@ -29,7 +29,7 @@ export default function TiposPokemon() {
                     </form>
                <div className='cardTipos'> 
                    <div className='cardlist'>
-                        {arrayFiltradoTipo.length>0 && arrayFiltradoTipo.map(e=><div style={{width:'200px'}} key={e.id}> 
+                        {arrayFiltradoTipo.length>0 && arrayFiltradoTipo.map(e=><div key={e.id}> 
                             <PokemonCardTipo
                                 id={e.id}
                                 nombre={e.nombre}
@@ -37,8 +37,8 @@ export default function TiposPokemon() {
                                 tipos={e.tipos}
                                 fuerza={e.fuerza}
                             />
-                    </div>)}
-                </div>
+                        </div>)}
+                    </div>
                </div>
             </div>
         </div>

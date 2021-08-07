@@ -1,0 +1,43 @@
+.button {
+  background-color: rgba(201, 75, 40, 0.295);
+  border-radius: 5px;
+  border: 1px solid #68230f;
+  color: #ffffff;
+  font-family: cursive;
+  font-size: 20px;
+  margin: 7px;
+}
+
+.button:hover {
+  background-color: #cc5333;
+}
+
+.buttonOrder {
+  background: none;
+  color: #fffbfb;
+  border: none;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.buttonfav {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  position: relative;
+  top: -75%;
+  right: -80%;
+}
+
+.buttonfav:hover {
+  color: red;
+}
+
+.buttonremove {
+  background-color: rgba(78, 8, 8, 0.335);
+  color: #0a0101;
+  border-radius: 8px;
+  border: 1px solid rgba(68, 8, 8, 0.397);
+}
+/*# sourceMappingURL=button.css.map */
