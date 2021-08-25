@@ -13,7 +13,6 @@ import '../../../Styles/home.scss'
 var cards=12;
 export default function Home(){
    const pokemonL= useSelector(state=>state.pokemonsLoading)
-   console.log(pokemonL)
    
     const [currentPag, setCurrentPag]= useState(0)
     const [items, setItems]=useState(null)
